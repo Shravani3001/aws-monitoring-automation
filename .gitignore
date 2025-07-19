@@ -1,0 +1,7 @@
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/monitoring-key.pub
+terraform/monitoring-key
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+

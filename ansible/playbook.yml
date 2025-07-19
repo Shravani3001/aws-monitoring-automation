@@ -1,0 +1,15 @@
+---
+- name: Install Prometheus
+  hosts: prometheus
+  roles:
+    - prometheus
+
+- name: Install Grafana
+  hosts: grafana
+  roles:
+    - grafana
+
+- name: Install Node Exporter on App Server only
+  hosts: grafana
+  roles:
+    - node_exporter
