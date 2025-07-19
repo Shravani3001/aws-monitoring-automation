@@ -52,7 +52,7 @@ This project sets up a basic monitoring stack on AWS using **Terraform** for inf
 
 ## Architecture Diagram
 
-![Alt text]()
+<img width="1087" height="704" alt="Monitoring-diagram" src="https://github.com/user-attachments/assets/46a5b573-b6ae-47ce-8515-a3fb55a03688" />
 
 ---
 
@@ -189,6 +189,12 @@ rate(node_cpu_seconds_total{mode="user"}[1m])
 
 This query gives you the rate of CPU usage in user mode over the last 1 minute for all CPUs on your monitored nodes.
 
+<img width="1920" height="959" alt="Output 1" src="https://github.com/user-attachments/assets/81bc6ce5-6609-4b19-b2cf-d20669d30576" />
+
+
+<img width="1920" height="907" alt="Output 2" src="https://github.com/user-attachments/assets/c2e96c22-b95e-4681-8732-fa52e9da6202" />
+
+
 ### 9. Verify Node Exporter
 
 SSH into each server and run:
@@ -217,6 +223,9 @@ Username: admin
 
 Password: admin
 
+<img width="1920" height="961" alt="Output 3" src="https://github.com/user-attachments/assets/d36da64f-c83d-4408-ab67-7bdcbf1d32fc" />
+
+
 ### 11. Configure Prometheus as Data Source
 
 - Go to Grafana → Configuration → Data Sources
@@ -224,12 +233,18 @@ Password: admin
 - URL: http://monitoring-server-private-ip:9090
 - Save & Test
 
+<img width="1920" height="959" alt="Output 4" src="https://github.com/user-attachments/assets/7b5b9387-100b-4733-bd4a-41f9bb5be5e1" />
+
 ### 12. Import Dashboard
 
 - Go to Dashboards → New → Import
 - Paste ID: 1860 (Node Exporter Full)
 - Select the Prometheus data source 
 - In the dashboard, under instance, select localhost:9100 to view metrics
+
+<img width="1920" height="959" alt="Output 5" src="https://github.com/user-attachments/assets/303e2c5d-789c-4e71-ba02-6b6c1b3ef724" />
+
+
 
 ✅ Output
 
