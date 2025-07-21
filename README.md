@@ -264,5 +264,6 @@ I love solving real-world problems with tools like Terraform, Ansible, Docker, J
 
 **Connect with me:**
 
-- LinkedIn: www.linkedin.com/in/shravani3001
-- GitHub: https://github.com/Shravani3001
+[LinkedIn](https://www.linkedin.com/in/shravani3001) 
+
+[GitHub](https://github.com/Shravani3001)
